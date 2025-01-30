@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Food Ordering</title>
+    <style>
+        /* Add your custom styles here */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #e74c3c;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+        
+        .total {
+            margin-top: 20px;
+            text-align: right;
+        }
+        
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Cart</h1>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example item, you can repeat this row for each item in the cart -->
+                <tr>
+                    <td>Chicken Burger</td>
+                    <td>2</td>
+                    <td>$5.99</td>
+                    <td>$11.98</td>
+                </tr>
+                <!-- Add more rows for additional items in the cart -->
+            </tbody>
+        </table>
+
+        <div class="total">
+            <p><strong>Total:</strong> $11.98</p>
+        </div>
+
+        <button onclick="location.href='checkout.html'">Proceed to Checkout</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Food Ordering. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

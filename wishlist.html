@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist - Food Ordering</title>
+    <style>
+        /* Add your custom styles here */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        h1 {
+            color: #e74c3c;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            margin-bottom: 16px;
+        }
+        
+        .wishlist-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        .wishlist-item img {
+            max-width: 100px;
+            margin-right: 16px;
+        }
+        
+        button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Your Wishlist</h1>
+    </header>
+
+    <section>
+        <ul>
+            <!-- Example item, you can repeat this for each item in the wishlist -->
+            <li class="wishlist-item">
+                <img src="images/chicken/Chicken-do-Pyaza.jpg" alt="chicken">
+                <div>
+                    <h3>Delicious Burger</h3>
+                    <p>$5.99</p>
+                </div>
+                <button onclick="removeFromWishlist(1)">Remove</button>
+            </li>
+            <!-- Add more list items for additional items in the wishlist -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Food Ordering. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript function to remove an item from the wishlist
+        function removeFromWishlist(itemId) {
+            // Implement your logic to remove the item from the wishlist
+            alert("Item removed from wishlist!");
+        }
+    </script>
+
+</body>
+
+</html>
